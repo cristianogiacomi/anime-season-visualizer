@@ -5,7 +5,7 @@ import { Dialog } from '@/components/storybook/dialog'
 import { Input } from '@/components/storybook/input'
 import { RadioGroup } from '@/components/storybook/radio-group'
 import { Slider } from '@/components/storybook/slider'
-import { Button } from '@/components/storybook/button'
+import { Button } from '@/components/Button/Button'
 
 export const Route = createFileRoute('/demo/storybook')({
   component: StorybookDemo,
