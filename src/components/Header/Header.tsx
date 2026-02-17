@@ -2,13 +2,14 @@ import { ArrowLeft } from "lucide-react"
 import type { ReactNode } from "react"
 
 import "./styles.css"
+import type { Season } from "@/types"
 
 export type HeaderProps = {
 	title?: string
 	icon?: ReactNode
 	subtitle?: string
 	backUrl?: string
-	variant?: "default" | "winter" | "spring" | "summer" | "fall"
+	variant?: "default" | Season
 }
 
 export function Header({
