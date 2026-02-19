@@ -1,0 +1,22 @@
+@scope (.pill) {
+	:scope {
+		color: var(--color-gray-900);
+		background-color: var(--color-gray-200);
+		white-space: nowrap;
+		font-size: var(--text-xs);
+		line-height: var(--text-xs--line-height);
+		font-weight: var(--font-weight-medium);
+		padding-inline: calc(var(--spacing) * 1.5);
+		border-radius: var(--radius-lg);
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		gap: var(--spacing);
+		flex-shrink: 0;
+	}
+
+	:scope:where([data-variant="airing"]) {
+		color: var(--color-white);
+		background-color: var(--color-green-500);
+	}
+}
