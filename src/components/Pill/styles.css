@@ -4,8 +4,8 @@
 		background-color: var(--color-gray-200);
 		white-space: nowrap;
 		font-size: var(--text-xs);
-		line-height: var(--text-xs--line-height);
-		font-weight: var(--font-weight-medium);
+		line-height: var(--text-sm--line-height);
+		font-weight: var(--font-weight-semibold);
 		padding-inline: calc(var(--spacing) * 1.5);
 		border-radius: var(--radius-lg);
 		display: inline-flex;
