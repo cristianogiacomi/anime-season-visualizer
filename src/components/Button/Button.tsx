@@ -1,31 +1,26 @@
-import React from 'react'
-import './styles.css'
+import clsx from "clsx"
+import type { ComponentProps } from "react"
+import type { Season } from "@/types"
 
-export interface ButtonProps {
-  variant?: 'primary' | 'secondary' | 'danger'
-  size?: 'small' | 'medium' | 'large'
-  children: React.ReactNode
-  onClick?: () => void
-  disabled?: boolean
-  type?: 'button' | 'submit' | 'reset'
-  className?: string
+import "./styles.css"
+
+export type ButtonProps = ComponentProps<"button"> & {
+	variant?: Season
 }
 
-export const Button: React.FC<ButtonProps> = ({
-  children,
-  onClick,
-  disabled = false,
-  type = 'button'
-}) => {
-
-  return (
-    <button
-      type={type}
-      onClick={onClick}
-      disabled={disabled}
-      className="my-button"
-    >
-      {children}
-    </button>
-  )
+export function Button({
+	children,
+	className,
+	variant = "winter",
+	...rest
+}: ButtonProps) {
+	return (
+		<button
+			{...rest}
+			className={clsx("button", className)}
+			data-variant={variant}
+		>
+			{children}
+		</button>
+	)
 }
