@@ -1,26 +1,33 @@
 import clsx from "clsx"
-import type { ComponentProps } from "react"
+import type { ComponentPropsWithRef, ElementType } from "react"
 import type { Season } from "@/types"
 
 import "./styles.css"
 
-export type ButtonProps = ComponentProps<"button"> & {
+type ButtonOwnProps<T extends ElementType> = {
+	as?: T
 	variant?: Season
 }
 
-export function Button({
+export type ButtonProps<T extends ElementType> = ButtonOwnProps<T> &
+	Omit<ComponentPropsWithRef<T>, keyof ButtonOwnProps<T>>
+
+export function Button<T extends ElementType = "button">({
 	children,
+	as,
 	className,
 	variant = "winter",
 	...rest
-}: ButtonProps) {
+}: ButtonProps<T>) {
+	const Component = as || "button"
+
 	return (
-		<button
+		<Component
 			{...rest}
 			className={clsx("button", className)}
 			data-variant={variant}
 		>
 			{children}
-		</button>
+		</Component>
 	)
 }
