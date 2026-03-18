@@ -1,6 +1,6 @@
 import { clsx } from "clsx"
 import type { ComponentProps } from "react"
-import "./styles.css"
+import "./pill.css"
 
 export type PillProps = ComponentProps<"span"> & {
 	variant?: "default" | "airing"

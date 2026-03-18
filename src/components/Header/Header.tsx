@@ -1,7 +1,7 @@
 import { ArrowLeft } from "lucide-react"
 import type { ReactNode } from "react"
 
-import "./styles.css"
+import "./header.css"
 import type { Season } from "@/types"
 
 export type HeaderProps = {

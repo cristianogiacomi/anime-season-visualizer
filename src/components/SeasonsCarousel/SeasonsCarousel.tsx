@@ -1,5 +1,5 @@
 import type { ReactNode } from "react"
-import "./styles.css"
+import "./seasons-carousel.css"
 
 export type SeasonsCarouselProps = {
 	children: ReactNode

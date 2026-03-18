@@ -1,6 +1,6 @@
 import { Calendar } from "lucide-react"
 import type { Season } from "@/types"
-import "./styles.css"
+import "./season-card.css"
 
 export type SeasonCardProps = {
 	season: Season

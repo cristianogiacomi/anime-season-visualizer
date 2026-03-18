@@ -1,6 +1,6 @@
 import { ChevronRight, Star } from "lucide-react"
 import { Pill } from "../Pill/Pill"
-import "./styles.css"
+import "./anime-card.css"
 
 export type AnimeCardProps = {
 	title: string

@@ -2,7 +2,7 @@ import clsx from "clsx"
 import type { ComponentPropsWithRef, ElementType } from "react"
 import type { Season } from "@/types"
 
-import "./styles.css"
+import "./button.css"
 
 type ButtonOwnProps<T extends ElementType> = {
 	as?: T

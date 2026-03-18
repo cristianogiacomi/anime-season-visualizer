@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import type { ComponentProps } from "react"
-import "./styles.css"
+import "./pagination.css"
 
 function PaginationBtn(props: ComponentProps<"a">) {
 	return (

@@ -1,6 +1,6 @@
 import { Play } from "lucide-react"
 import type { Season } from "@/types"
-import "./styles.css"
+import "./season-heading.css"
 
 export type SeasonHeadingProps = {
 	heading: string

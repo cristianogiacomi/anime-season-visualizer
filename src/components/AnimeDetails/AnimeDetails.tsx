@@ -1,5 +1,5 @@
 import { Star } from "lucide-react"
-import "./styles.css"
+import "./anime-details.css"
 import { Pill } from "../Pill/Pill"
 
 export type AnimeDetailsProps = {

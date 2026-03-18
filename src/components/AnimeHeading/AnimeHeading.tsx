@@ -1,6 +1,6 @@
 import { Pill } from "../Pill/Pill"
 import type { Genre } from "@/types"
-import "./styles.css"
+import "./anime-heading.css"
 
 export type AnimeHeadingProps = {
 	title: string
