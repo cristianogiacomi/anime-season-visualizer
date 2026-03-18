@@ -2,3 +2,14 @@
 
 @import "./theme.css" layer(theme);
 @import "./base.css" layer(base);
+
+@keyframes blink {
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: var(--blink-opacity, 0.5);
+	}
+}

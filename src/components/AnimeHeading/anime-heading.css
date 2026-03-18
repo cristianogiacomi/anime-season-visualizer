@@ -1,0 +1,19 @@
+@scope (.anime-heading) {
+	:scope {
+		margin-block: calc(var(--spacing) * 6);
+	}
+
+	h1 {
+		color: var(--color-gray-900);
+		font-size: var(--text-4xl);
+		line-height: var(--text-4xl--line-height);
+		font-weight: var(--font-weight-medium);
+	}
+
+	.genres {
+		display: flex;
+		gap: calc(var(--spacing) * 2);
+		flex-wrap: wrap;
+		margin-block-start: calc(var(--spacing) * 3);
+	}
+}

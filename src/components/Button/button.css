@@ -1,0 +1,58 @@
+@scope (.button) {
+	:scope {
+		width: 100%;
+		height: calc(var(--spacing) * 9);
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: calc(var(--spacing) * 3);
+		padding-inline: calc(var(--spacing) * 3);
+		color: var(--color-white);
+		font-size: var(--text-sm);
+		line-height: var(--text-sm--line-height);
+		font-weight: var(--font-weight-semibold);
+		border-radius: var(--radius-lg);
+		border: none;
+		transition: all var(--default-transition-duration)
+			var(--default-transition-timing-function);
+	}
+
+	:scope:hover {
+		opacity: 0.9;
+	}
+
+	:scope:where([data-variant="winter"]) {
+		background: linear-gradient(
+			to right in oklab,
+			var(--winter-gradient-stops)
+		);
+	}
+
+	:scope:where([data-variant="spring"]) {
+		background: linear-gradient(
+			to right in oklab,
+			var(--spring-gradient-stops)
+		);
+	}
+
+	:scope:where([data-variant="summer"]) {
+		background: linear-gradient(
+			to right in oklab,
+			var(--summer-gradient-stops)
+		);
+	}
+
+	:scope:where([data-variant="fall"]) {
+		background: linear-gradient(
+			to right in oklab,
+			var(--fall-gradient-stops)
+		);
+	}
+
+	svg {
+		width: calc(var(--spacing) * 4);
+		height: calc(var(--spacing) * 4);
+		fill: var(--color-white);
+	}
+}

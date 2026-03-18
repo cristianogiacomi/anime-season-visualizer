@@ -1,0 +1,32 @@
+@scope (.pill) {
+	:scope {
+		color: var(--color-gray-900);
+		background-color: var(--color-gray-200);
+		white-space: nowrap;
+		font-size: var(--text-xs);
+		line-height: var(--text-sm--line-height);
+		font-weight: var(--font-weight-semibold);
+		padding-inline: calc(var(--spacing) * 1.5);
+		border-radius: var(--radius-lg);
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		gap: var(--spacing);
+		flex-shrink: 0;
+	}
+
+	:scope:where([data-variant="airing"]) {
+		color: var(--color-white);
+		background-color: var(--color-green-500);
+
+		&::before {
+			content: "";
+			inline-size: calc(var(--spacing) * 1.5);
+			block-size: calc(var(--spacing) * 1.5);
+			margin-inline-end: calc(var(--spacing) * 0.5);
+			background-color: var(--color-white);
+			border-radius: 100%;
+			animation: blink 2.5s ease infinite;
+		}
+	}
+}
