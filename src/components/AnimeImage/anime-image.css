@@ -1,0 +1,9 @@
+@scope (.anime-image) {
+	:scope {
+		inline-size: 100%;
+		border-radius: var(--radius-2xl);
+		max-block-size: calc(var(--spacing) * 100);
+		object-fit: cover;
+		object-position: center;
+	}
+}
