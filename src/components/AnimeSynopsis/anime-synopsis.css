@@ -1,0 +1,29 @@
+@scope (.anime-synopsis) {
+	:scope {
+		padding: calc(var(--spacing) * 4);
+		padding-block-end: calc(var(--spacing) * 6);
+		background-color: var(--color-white);
+		border-radius: var(--radius-2xl);
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.heading {
+		display: flex;
+		align-items: center;
+		gap: calc(var(--spacing) * 2);
+		margin-block-end: calc(var(--spacing) * 3);
+	}
+
+	h2 {
+		font-size: var(--text-lg);
+		line-height: var(--text-lg--line-height);
+		font-weight: var(--font-weight-semibold);
+		color: var(--color-gray-900);
+	}
+
+	p {
+		font-size: var(--text-sm);
+		line-height: var(--leading-relaxed);
+		color: var(--color-gray-700);
+	}
+}
